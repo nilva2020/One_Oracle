@@ -18,8 +18,6 @@ Desenvolvi um site com várias páginas contendo os tópicos dos aprendizados.
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-</p>
-
 ## Developer
 
 <p style="text-align:center;">Nilva Pires |  2025</p>
