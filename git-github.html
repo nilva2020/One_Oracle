@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudando GitHub e Git</title>
+    <link rel="stylesheet" href="css/github-git-styles.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="git-github.html">Git & GitHub</a></li>
+        <li><a href="desafio.html">Desafio</a></li>
+      </ul>
+    </nav>
+    <header class="github-git-banner">
+      <img src="img/bannergitgithub.png" alt="Banner" />
+    </header>
+
+    <div class="github-git-section" id="github">
+      <h1>O que é GitHub?</h1>
+      <img src="img/github.png" alt="GitHub Logo" class="github-git-logo" />
+
+      <p>
+        O GitHub é uma plataforma de hospedagem de código-fonte e arquivos com
+        controle de versão usando o Git. Ele permite que desenvolvedores
+        colaborem em projetos de software, rastreiem alterações no código e
+        gerenciem diferentes versões de seus projetos.
+      </p>
+
+      <h2>Para que serve o GitHub?</h2>
+      <p>O GitHub é usado principalmente para:</p>
+      <ul>
+        <li>Hospedar repositórios de código-fonte.</li>
+        <li>Colaborar com outros desenvolvedores.</li>
+        <li>Rastrear e gerenciar alterações no código.</li>
+        <li>Gerenciar projetos e tarefas.</li>
+        <li>Compartilhar código com a comunidade.</li>
+      </ul>
+
+      <h2>Passo a passo para criar um repositório no GitHub</h2>
+      <ol>
+        <li>Faça login na sua conta do GitHub.</li>
+        <li>
+          No canto superior direito, clique no ícone <strong>+</strong> e
+          selecione <strong>New repository</strong>.
+        </li>
+        <li>Digite um nome para o seu repositório.</li>
+        <li>Adicione uma descrição opcional.</li>
+        <li>Escolha a visibilidade do repositório (público ou privado).</li>
+        <li>
+          Marque a opção
+          <strong>Initialize this repository with a README</strong> se desejar.
+        </li>
+        <li>Clique em <strong>Create repository</strong>.</li>
+      </ol>
+
+      <h2>Como clonar um repositório no desktop</h2>
+      <ol>
+        <li>Abra o GitHub Desktop ou o terminal.</li>
+        <li>No GitHub, navegue até o repositório que você deseja clonar.</li>
+        <li>
+          Clique no botão <strong>Code</strong> e copie a URL do repositório.
+        </li>
+        <li>
+          No GitHub Desktop, clique em <strong>File</strong> >
+          <strong>Clone repository</strong>. No terminal, use o comando
+          <code>git clone &lt;URL do repositório&gt;</code>.
+        </li>
+        <li>Escolha o local onde deseja salvar o repositório clonado.</li>
+        <li>
+          Clique em <strong>Clone</strong> no GitHub Desktop ou pressione
+          <code>Enter</code> no terminal.
+        </li>
+      </ol>
+    </div>
+
+    <div class="github-git-section" id="git">
+      <h1>O que é Git?</h1>
+      <img src="img/git.png" alt="Git Logo" class="github-git-logo" />
+      <!-- Substitua pelo caminho da sua imagem -->
+      <p>
+        O Git é um sistema de controle de versão distribuído, usado para
+        rastrear alterações no código-fonte durante o desenvolvimento de
+        software. Ele permite que vários desenvolvedores trabalhem no mesmo
+        projeto de forma simultânea, mantendo um histórico completo de todas as
+        alterações feitas.
+      </p>
+
+      <h2>Para que serve o Git?</h2>
+      <p>O Git é usado principalmente para:</p>
+      <ul>
+        <li>Rastrear alterações no código-fonte.<br /></li>
+        <li>Permitir a colaboração entre desenvolvedores.<br /></li>
+        <li>Gerenciar diferentes versões de um projeto.<br /></li>
+        <li>
+          Facilitar a fusão de alterações feitas por diferentes
+          desenvolvedores.<br />
+        </li>
+      </ul>
+
+      <h2>Como instalar o Git no computador</h2>
+      <ol>
+        <li>
+          Acesse o site oficial do Git:
+          <a href="https://git-scm.com/">https://git-scm.com/<br /><br /></a>.
+        </li>
+        <li>
+          Baixe a versão adequada para o seu sistema operacional (Windows, macOS
+          ou Linux).<br /><br />
+        </li>
+        <li>Execute o instalador e siga as instruções na tela.<br /><br /></li>
+        <li>
+          Após a instalação, abra o terminal (ou prompt de comando no Windows) e
+          digite <code>git --version</code> para verificar se o Git foi
+          instalado corretamente.
+        </li>
+      </ol>
+
+      <h2>Como configurar o Git</h2>
+      <ol>
+        <li>Abra o terminal (ou prompt de comando no Windows).<br /></li>
+        <li>
+          Configure seu nome de usuário globalmente com o comando:
+          <code>git config --global user.name "Seu Nome"</code>.
+        </li>
+        <li>
+          Configure seu e-mail globalmente com o comando:
+          <code>git config --global user.email "seuemail@example.com"</code>.
+        </li>
+        <li>
+          Para verificar as configurações, use o comando:
+          <code>git config --list</code>.
+        </li>
+      </ol>
+
+      <h2>Principais comandos do Git</h2>
+      <ul>
+        <li>
+          <code>git init</code>: Inicializa um novo repositório Git.<br /><br />
+        </li>
+        <li>
+          <code>git clone &lt;URL&gt;</code>: Clona um repositório existente.<br /><br />
+        </li>
+        <li>
+          <code>git status</code>: Verifica o status das alterações no
+          repositório.<br /><br />
+        </li>
+        <li>
+          <code>git add &lt;arquivo&gt;</code>: Adiciona um arquivo ao índice
+          (staging area).<br /><br />
+        </li>
+        <li>
+          <code>git commit -m "mensagem"</code>: Confirma as alterações no
+          repositório com uma mensagem descritiva.<br /><br />
+          <dl>
+            <dt>M: A letra M representa o estado Modified<br /><br /></dt>
+            <dd>
+              Isso significa que o arquivo já existia no repositório, mas que
+              recebeu alguma modificação que ainda não foi registrada no Git.<br /><br />
+            </dd>
+            <dt>
+              U: A letra U representa o estado Untracked,não rastreado.<br /><br />
+            </dt>
+            <dd>
+              Isso significa que o arquivo ainda não existia no repositório e
+              que ainda não teve seu registro (commit) feito no Git.<br /><br />
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <code>git push</code>: Envia as alterações confirmadas para um
+          repositório remoto.<br /><br />
+        </li>
+        <li>
+          <code>git pull</code>: Atualiza o repositório local com as alterações
+          do repositório remoto.<br /><br />
+        </li>
+        <li>
+          <code>git branch</code>: Lista, cria ou exclui branches
+          (ramificações).<br /><br />
+        </li>
+        <li>
+          <code>git checkout &lt;branch&gt;</code>: Muda para uma branch
+          específica.<br /><br />
+        </li>
+        <li>
+          <code>git merge &lt;branch&gt;</code>: Mescla uma branch com a branch
+          atual.<br /><br />
+        </li>
+        <li><code>git log</code>: Exibe o histórico de commits.<br /><br /></li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <p>Desenvolvido por Nilva Pires | 2025</p>
+    </footer>
+  </body>
+</html>
